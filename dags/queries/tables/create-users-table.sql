@@ -1,0 +1,21 @@
+CREATE OR REPLACE TABLE TEST.APP."Users" (
+	"User" NUMBER(38,0) NOT NULL,
+	"Person" VARCHAR(100),
+    "CurrentAge" NUMBER(3,0),
+    "RetirementAge" NUMBER(3,0),
+    "BirthYear" NUMBER(38,0),
+    "BirthMonth" NUMBER(2,0),
+    "Gender" VARCHAR(6),
+    "Address" VARCHAR(1000),
+    "Apartment" NUMBER(38,0),
+    "City" VARCHAR(500),
+    "State" VARCHAR(5),
+    "ZipCode" NUMBER(38,0),
+    "Latitude" NUMBER(38,2),
+    "Longitude" NUMBER(38,2),
+    "PerCapitaIncomeZipCode" NUMBER(38,0),
+    "YearlyIncomePerson" NUMBER(38,0),
+    "TotalDebt" NUMBER(38,0),
+    "FICOScore" NUMBER(38,0),
+    "NumCreditCards" NUMBER(38,0)
+);

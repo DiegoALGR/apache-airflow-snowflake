@@ -1,0 +1,1 @@
+COPY INTO TEST.APP."Cards" from @cards_stage;

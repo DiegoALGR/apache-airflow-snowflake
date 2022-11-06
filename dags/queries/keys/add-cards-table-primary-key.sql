@@ -1,0 +1,1 @@
+ALTER TABLE TEST.APP."Cards" ADD PRIMARY KEY ("CardNumber");

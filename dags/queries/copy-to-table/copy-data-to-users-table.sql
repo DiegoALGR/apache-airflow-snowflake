@@ -1,0 +1,1 @@
+COPY INTO TEST.APP."Users" from @users_stage;

@@ -1,0 +1,1 @@
+ALTER TABLE TEST.APP."Users" ADD PRIMARY KEY ("User");

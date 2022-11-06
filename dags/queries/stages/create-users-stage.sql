@@ -1,0 +1,1 @@
+CREATE OR REPLACE stage users_stage FILE_FORMAT = csv_format;
