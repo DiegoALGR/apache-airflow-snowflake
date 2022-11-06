@@ -145,7 +145,11 @@ with DAG('data-processor',
             sql='copy-to-table/copy-data-to-user-credit-card-transactions-table.sql'
         )
 
-        t1 >> [t2, t3, t4] >> t5 >> [t10, t11, t12] >> t13 >> [t14, t15] >> t16 >> [stageCardsData(), stageUserCardTransactionsData()] >> t17 >> t18 >> t19 >> t20
+        t21 = DummyOperator(
+            task_id='end'
+        )
+
+        t1 >> [t2, t3, t4] >> t5 >> [t10, t11, t12] >> t13 >> [t14, t15] >> t16 >> [stageCardsData(), stageUserCardTransactionsData()] >> t17 >> t18 >> t19 >> t20 >> t21
         t5 >> t6 >> t7 >> t9 >> t13
         t7 >> t8 >> t13
         t13 >> stageUsersData() >> t17
